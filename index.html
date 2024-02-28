@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobalt App</title>
+</head>
+<body>
+  <main>
+    <h1>Cobalt for TV</h1>
+    <button id="btn" >Click me</button>
+    <p id="subtitle">This is a dummy subtitle</p>
+  </main>  
+</body>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener("click", function(){
+        var subtitle = document.getElementById("subtitle");
+        subtitle.innerHTML = "This is still a dummy subtitle :P";
+    })
+</script>
+</html>
