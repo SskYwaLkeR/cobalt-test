@@ -5,38 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cobalt App</title>
 </head>
-    <style>
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;  
-        }
-        html,body {
-            width: 100%;
-            height: 100%;
-        }
-
-        .main {
-            width: 100%;
-            height: 100%;
-            background-color: red;
-        }
-        .subtitle {
-            color: #ffffff;
-        }
-    </style>
+   <link rel="stylesheet" href="./styles.css">
 <body>
-  <div class="main">
-    <h1>Cobalt for TV</h1>
-    <button id="btn" >Click me</button>
-    <p class="subtitle" id="subtitle">This is a dummy subtitle</p>
+  <div class="container">
+    <img src="" id="image" class="bg-img" alt="">
   </div>  
 </body>
-<script>
-    var btn = document.getElementById('btn');
-    btn.addEventListener("click", function(){
-        var subtitle = document.getElementById("subtitle");
-        subtitle.innerHTML = "This is still a dummy subtitle :P";
-    })
-</script>
+<script src="./script.js"></script>
 </html>
