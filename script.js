@@ -18,7 +18,9 @@ function changeImage() {
 
 function start() {
     changeImage();
-    setInterval(changeImage, interval);
+   if(window && window.setInterval) {
+        window.setInterval(changeImage, interval);
+   }
 }
 
 start();
