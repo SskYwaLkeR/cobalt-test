@@ -6,15 +6,30 @@
     <title>Cobalt App</title>
 </head>
     <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;  
+        }
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+
         .main {
+            width: 100%;
+            height: 100%;
             background-color: red;
+        }
+        .subtitle {
+            color: #ffffff;
         }
     </style>
 <body>
   <main class="main">
     <h1>Cobalt for TV</h1>
     <button id="btn" >Click me</button>
-    <p id="subtitle">This is a dummy subtitle</p>
+    <p class="subtitle" id="subtitle">This is a dummy subtitle</p>
   </main>  
 </body>
 <script>
