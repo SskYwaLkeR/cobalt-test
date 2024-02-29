@@ -20,6 +20,8 @@ function start() {
     changeImage();
    if(window && window.setInterval) {
         window.setInterval(changeImage, interval);
+   } else if(setInterval) {
+    setInterval(changeImage, interval);
    }
 }
 
